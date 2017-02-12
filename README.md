@@ -67,12 +67,12 @@ aspects of your tests in a declarative and expressive way.
 Given a function from one value `a` to another value `b` and an assertion
 of `a` returns a new assertion of `b`.
 
-#### `ap :: Assertion (a → b) → Assertion a → Assertion b`
+#### `ap :: Assertion (a → b) → Assertion a → Assertion b` (Apply)
 
 Given an assertion of a function of type `a` to type `b` and an assertion of
 type `a` returns an assertion of type `b`
 
-#### `chain :: (a → Assertion b) → Assertion a → Assertion b`
+#### `chain :: (a → Assertion b) → Assertion a → Assertion b` (Monad)
 
 Given a function from one value `a` to `Assertion b` and an assertion of type `a`,
 returns an assertion of type `b`

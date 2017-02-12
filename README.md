@@ -77,6 +77,20 @@ type `a` returns an assertion of type `b`
 Given a function from one value `a` to `Assertion b` and an assertion of type `a`,
 returns an assertion of type `b`
 
+#### `bimap :: ([char] → [char]) → (a → b) → Assertion a → Assertion b` (Bifunctor)
+
+The first parameter is a function mapping one string to another upon unsuccessful
+verification of the provided assertion.
+
+The second parameter is a function mapping a value `a` to a value of `b` upon
+successful verification of the provided assertion.
+
+The third parameter is an assertion of type `a`.
+
+Returns an assertion of type `b`. If the assertion given as the third parameter
+is unsuccessfully verified it will also fail to be verified. If the assertion
+given as the third parameter is verified it will also successfully verify.
+
 ### Interpreters
 
 Interpreters are functions that *verify* assertions.

@@ -6,6 +6,10 @@
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@motorcycle/tslint/-/tslint-1.3.0.tgz#c8624624ce9b074e437cc4853ee8fc85a0b2a143"
 
+"@typed/curry@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@typed/curry/-/curry-1.0.1.tgz#555d4624b0cbf09e101945326d3bb9ffcaba3655"
+
 "@types/glob-expand@^0.0.30":
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@types/glob-expand/-/glob-expand-0.0.30.tgz#7d1185a8607b693a2bb7414f1cf9ea1b8fd396d6"
@@ -1810,6 +1814,10 @@ tslint@^4.4.2:
     optimist "~0.6.0"
     resolve "^1.1.7"
     update-notifier "^1.0.2"
+
+typed-colors@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/typed-colors/-/typed-colors-1.0.0.tgz#a86fb57183ea8d955d811aec0e100f565e48bbb9"
 
 typedarray@^0.0.6:
   version "0.0.6"

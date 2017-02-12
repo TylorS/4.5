@@ -58,5 +58,9 @@
     "tslint": "^4.4.2",
     "typescript": "^2.1.6",
     "validate-commit-msg": "^2.11.1"
+  },
+  "dependencies": {
+    "@typed/curry": "^1.0.1",
+    "typed-colors": "^1.0.0"
   }
 }

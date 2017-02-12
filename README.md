@@ -8,6 +8,15 @@ If you prefer functional style APIs and practices in JavaScript or TypeScript
 your tests likely don't look too much like your applications. This library aims
 to solve this with functionally-oriented assertions that are lazy and monadic.
 
+## Table of Contents
+
+- [Installation](#let-me-have-it)
+- [API](#api)
+  - [Assertions](#assertions)
+  - [Combinators](#combinators)
+  - [Interpreters](#interpreters)
+- [Types](#types)
+
 ## Let me have it!
 ```sh
 yarn add 4.5

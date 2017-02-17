@@ -1,3 +1,13 @@
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/TylorS/4.5/compare/v0.2.0...v0.3.0) (2017-02-17)
+
+
+### Features
+
+* **concat:** add concat function ([aa71e80](https://github.com/TylorS/4.5/commit/aa71e80))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/TylorS/4.5/compare/v0.1.0...v0.2.0) (2017-02-12)
 

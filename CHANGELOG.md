@@ -1,3 +1,13 @@
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/TylorS/4.5/compare/v0.4.0...v0.5.0) (2017-02-17)
+
+
+### Bug Fixes
+
+* **formatError:** remove trailing newline ([ede3d60](https://github.com/TylorS/4.5/commit/ede3d60))
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/TylorS/4.5/compare/v0.3.0...v0.4.0) (2017-02-17)
 

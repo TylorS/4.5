@@ -1,6 +1,6 @@
 {
   "name": "4.5",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Monadic test assertions",
   "main": "lib/index.js",
   "module": "lib.es2015/index.js",

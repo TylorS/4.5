@@ -3,11 +3,8 @@ import { formatError, isEqual } from '../helpers';
 
 import { curry } from '@typed/curry';
 
-export const equals: EqualsFn = curry(
-  function equals<T>(expected: T, actual: T): Assertion<T> {
-    return new Equals<T>(expected, actual);
-  },
-);
+export const equals: EqualsFn =
+  curry(<T>(expected: T, actual: T): Assertion<T> => new Equals<T>(expected, actual));
 
 export interface EqualsFn {
   <T>(expected: T, actual: T): Assertion<T>;

@@ -2,9 +2,7 @@ import { Assertion, Verification } from '../types';
 
 import { inspect } from '../helpers';
 
-export function fail(value: any): Assertion<any> {
-  return new FailAssertion(value);
-}
+export const fail = (value: any): Assertion<any> => new FailAssertion(value);
 
 export class FailAssertion implements Assertion<any> {
   constructor(private value: any) {}

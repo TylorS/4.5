@@ -91,6 +91,11 @@ Returns an assertion of type `b`. If the assertion given as the third parameter
 is unsuccessfully verified it will also fail to be verified. If the assertion
 given as the third parameter is verified it will also successfully verify.
 
+#### `concat:: Assertion a → Assertion a → Assertion a`
+
+Concatenate 2 assertions together. The second assertion passed to concat
+will not be verified if the first assertion failed.
+
 ### Interpreters
 
 Interpreters are functions that *verify* assertions.

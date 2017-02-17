@@ -3,11 +3,8 @@ import { Assertion, Verification } from '../types';
 import { curry } from '@typed/curry';
 import { formatError } from '../helpers';
 
-export const is: IsFn = curry(
-  function is<T>(expected: T, actual: T): Assertion<T> {
-    return new Is<T>(expected, actual);
-  },
-);
+export const is: IsFn =
+  curry(<T>(expected: T, actual: T): Assertion<T> => new Is<T>(expected, actual));
 
 export interface IsFn {
   <T>(expected: T, actual: T): Assertion<T>;

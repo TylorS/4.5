@@ -54,8 +54,12 @@ in many other libraries.
 
 #### `fail :: * → Assertion *`
 
-Creates an assert that, when verified, will always fail with a string
+Creates an assertion that, when verified, will always fail with a string
 representation of the given value.
+
+#### `throws :: (* → *) → Assertion Error`
+
+Creates an assertion that verifies a given function throws an error.
 
 ### Combinators
 

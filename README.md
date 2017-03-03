@@ -8,6 +8,12 @@ If you prefer functional style APIs and practices in JavaScript or TypeScript
 your tests likely don't look too much like your applications. This library aims
 to solve this with functionally-oriented assertions that are lazy and monadic.
 
+Built for the functional test-runner [45](https://github.com/TylorS/45) which
+has a built-in interpreter for `4.5` assertions.
+
+Should also work with all test libraries that use thrown errors to signal
+test failure such as `Mocha`, using the [`assert interpreter`](#interpreters).
+
 ## Table of Contents
 
 - [Installation](#let-me-have-it)
@@ -22,6 +28,33 @@ to solve this with functionally-oriented assertions that are lazy and monadic.
 yarn add 4.5
 # or
 npm install --save 4.5
+```
+
+## Basic usage
+
+```
+import { equals, assert } from '4.5';
+import { pipe, add } from 'ramda';
+
+// Mocha
+describe('Array', () => {
+  describe('given values 1, 2 and 3', () => {
+    it('create an array containing values 1 2 and 3', () => {
+      assert(equals([1, 2, 3], Array(1, 2, 3))); // use assert() to "interpret" assertion
+    });
+  });
+});
+
+// 45
+import { describe, given, it } from '45';
+
+describe('Array', [
+  given('values 1, 2 and 3', [
+    it('creates an array containing values 1 2 and 3', () => {
+      return equals([1, 2, 3], Array(1, 2, 3)); // interprets assertions
+    })
+  ])
+])
 ```
 
 ## API
